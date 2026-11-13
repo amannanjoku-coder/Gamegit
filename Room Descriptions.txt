@@ -1,0 +1,53 @@
+Living Room
+The small living room contains a couch, coffee table, and two
+armchairs. Pictures of various cousins adorn the walls along
+with two of your aunt's wretched attempts at oil painting. You
+can't help but notice that the carpet could use a good
+vacuuming.
+Doorways lead west to your father's office, north to your
+bedroom, and east to the kitchen.
+#
+
+Bedroom
+This is your domain and has been since your family moved here
+when you were six. A nightstand with a Superman lamp sits next
+to your twin bed. Posters of various anime characters cover one
+wall. A pile of laundry, slowly but surely attaining sentience,
+occupies the far corner.
+The door to the attic is in the ceiling above the pile of
+clothes. You can return south to the living room.
+#
+
+Kitchen
+Where you will be getting your daily nutrients. This kitchen got
+remodeled a couple years ago along with some new appliances and 
+was made with a little bit more space. You can now sit in the 
+kitchen and stay and big enough to have a conversation with your
+familia.
+There are doorways leading south to the garage and west to the
+living room.
+#
+
+Attic
+a room at the top of your house that is quite literally filled with
+a bunch random things you have almost never seen before. To your
+right you see a couple of toys that you haven't seen in years. 
+To your left a box of roirs that your father doddmoy have took.
+The only way in and out of the attic is from the entry way in the
+bedroom.
+#
+
+Garage
+Filled with a more things that you haven't seen in a long time
+along with a bunch of tools, and some freeweights which clearly
+you haven't been using lately. And obviously your car is in here
+as well.
+The entrance to the garage is from the kitchen.
+#
+
+Office
+Where you spend your time doing work. You wake up in the morning
+after making a shake, smoothie, or cup of coffee and look over 
+what you have to do for the day.
+The office is west from the living room.
+#
