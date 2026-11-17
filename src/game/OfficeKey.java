@@ -18,4 +18,4 @@ public class OfficeKey extends Item {
 		else
 			Game.print("You can't use the Office key for this.");
 			}
-	}
+}

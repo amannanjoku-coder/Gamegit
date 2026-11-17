@@ -71,6 +71,6 @@ public class World {
 		garage.setLocked(true);
 		return livingRoom;
 		
-		
+	
 	}
 }
