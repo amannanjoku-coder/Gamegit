@@ -12,7 +12,7 @@ import java.io.ObjectOutputStream;
 
 public class Game {
 	public static HashMap<String, String> roomDescriptions = new HashMap<String, String>();
-    private static Room currentRoom;// = World.buildWorld();
+    public static Room currentRoom;// = World.buildWorld();
     public static ArrayList<Item> inventory = new ArrayList<Item>();
     
     public static void main(String[] args) {
@@ -83,7 +83,9 @@ public class Game {
             currentRoom = nxtRoom;
         }
     }
-  
+    public static Room getCurrentRoom() {
+    	return currentRoom;
+    }
     public static void takeItem(String name) {
     	Item item = currentRoom.getItem(name);
     	if (item == null) {
@@ -98,7 +100,16 @@ public class Game {
     		Game.print("You take the " + item + " and carry it with you");
     	}
     }
-    
+    public static void useItem(String name) {
+    	for (Item i : inventory) {
+    		if (i.getName().equalsIgnoreCase(name)) {
+    			i.use();
+    			return;
+    		}
+    	}
+    	Game.print("You don't have a " + name );
+    	}
+  
     public static void showInventory() {
     	if (inventory.isEmpty()) {
     		Game.print("You are carrying nothing.");
@@ -164,6 +175,13 @@ public class Game {
                         takeItem(words[1]);
                     }
                     break;
+                case "use":
+                	if (words.length < 2) {
+                		Game.print("Use what?");
+                	} else {
+                		useItem(words[words.length - 1]);
+                	}
+                	break;
                 case "i":
                 	showInventory();
                 	break;

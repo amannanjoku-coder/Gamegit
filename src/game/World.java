@@ -14,7 +14,7 @@ public class World {
 		System.out.println(currentRoom); 
 		currentRoom = currentRoom.getExit(1);
 		System.out.println(currentRoom); 
-		currentRoom = currentRoom.getExit(2); 
+		currentRoom = currentRoom.getExit(5); 
 		System.out.println(currentRoom); 
 		currentRoom = currentRoom.getExit(4); 
 		System.out.println(currentRoom); 
@@ -22,8 +22,8 @@ public class World {
 	}
 	
 	public static Room buildWorld() {
-		Item officekey = new Item("officekey");
-		Item tool = new Item("tool");
+		Item officekey = new OfficeKey();
+		Item tool = new Tool();
 		Item musics = new Item("musicbox");
 		Item flash = new Item("flashlight");
 		Item knife = new Item("knife");
@@ -31,6 +31,7 @@ public class World {
 		Item safe = new Item("safe", true);
 		Item couch = new Item("couch", true);
 		Item bed = new Item ("bed", true);
+		Item notebook = new Item ("Notebook");
 		
 		Room livingRoom = new Room("Living Room"); /*"Small living room with a couch and a coffee table.", tool, musics);*/
 		Room office = new Room("Office");// "Go get work done.");
@@ -48,6 +49,7 @@ public class World {
 		bedroom.addItem(officekey);
 		bedroom.addItem(bed);
 		attic.addItem(safe);
+		office.addItem(notebook);
 		
 		livingRoom.addExit(office, 1);
 		livingRoom.addExit(bedroom, 2);
