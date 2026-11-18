@@ -11,11 +11,11 @@ public class Tool extends Item {
 public void use() {
 	if (Game.getCurrentRoom().getName().equals("Bedroom")) {
 		if (usedTool) {
-			Game.print("You already opened the attic door!");
+			Game.print("You already opened the attic door.");
 		} else {
 			Game.getCurrentRoom().getExit(4).setLocked(false);
 			usedTool = true;
-			Game.print("Using the tool, you are able to open the door.");
+			Game.print("Using the tool, you are able to open the door leading to the attic.");
 		}
 	} else
 		Game.print("You don't see any way to use the tool.");
