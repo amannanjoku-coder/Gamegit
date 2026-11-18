@@ -31,7 +31,7 @@ public class World {
 		Item safe = new Item("safe", true);
 		Item couch = new Item("couch", true);
 		Item bed = new Item ("bed", true);
-		Item notebook = new Item ("Notebook");
+		Item notebook = new Item ("notebook");
 		
 		Room livingRoom = new Room("Living Room"); /*"Small living room with a couch and a coffee table.", tool, musics);*/
 		Room office = new Room("Office");// "Go get work done.");

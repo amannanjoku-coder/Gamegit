@@ -1,20 +1,20 @@
 package game;
 
 public class Notebook extends Item {
-	public boolean passWord;
+	public boolean read;
 	
 	public Notebook() {
 		super("notebook");
-		passWord = false;
+		read = false;
 	}
 	@Override
-	public void use() {
-		if (Game.inventory.contains(this)) {
+	public void read() {
+		if (read) {
 			Game.print("You read the " + getName() + ",nothing valuable is in here.");
 		}
 		else {
 			Game.inventory.add(new Item("password"));
-			passWord = true;
+			read = true;
 			Game.print("You read the " + getName() + "and find the password.");
 		}
 	}

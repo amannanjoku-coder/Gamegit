@@ -1,18 +1,21 @@
 package game;
 
 public class Safe extends Item {
+	private boolean open;
+	private boolean close;
 	
 	public Safe() {
 		super("safe", true);
-		opened = false;
+		open = false;
+		close = false;
 	}
 	@Override
 	public void use() {
-		if(opened) {
-			Game.print("The sade has been open already.");
+		if(open) {
+			Game.print("The safe has been open already.");
 			return;
 		}
-		opened = true;
+		open = true;
 		Game.currentRoom.addItem(new Notebook());
 		Game.print("You open the " + getName() + "and find a notebook.");
 	}

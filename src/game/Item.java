@@ -38,7 +38,7 @@ public class Item implements Serializable {
 	
 	public boolean Takes() {
 		if (heavy) {
-			Game.print("You can't lift the " + getName() + "!");
+			Game.print("You can't lift the " + getName() + " boi!");
 			return true;
 		}
 		else
@@ -47,5 +47,15 @@ public class Item implements Serializable {
 	
 	public void use() {
 		Game.print("You can't use the " + getName() + ".");
+	}
+	
+	public void open() {
+		Game.print("Not able to be opened");
+	}
+	public void close() {
+		Game.print("Not able to be closed");
+	}
+	public void read() {
+		Game.print("There is nothing to read here bud");
 	}
 }	
