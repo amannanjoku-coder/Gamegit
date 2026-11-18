@@ -10,7 +10,7 @@ public class Item implements Serializable {
 	public Item (String n) {
 		this(n, false);
 	}
-	
+
 	public Item (String n, boolean h) {
 		name = n;
 		heavy = h;
